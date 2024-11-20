@@ -1,0 +1,75 @@
+@import 'colors';
+@import 'formats';
+@import 'header';
+@import 'home';
+
+/*font-family*/
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    margin: 0;
+    background-color: $body;
+    color: $text; 
+}
+
+
+
+a{
+    text-decoration: none;
+    color: $link;
+}
+
+
+@media (max-width: 48em){//mobile
+    .hero h1{
+        font-size: 9vw;
+    }
+
+    .hero p{
+        font-size: 4vw;
+    }
+
+    .about{
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 48em){ //desktop
+    .header li{
+        float: left;
+    }
+
+    .header .menu{
+        clear: none;
+        float: right;
+        max-height: 0;
+        max-height: none;
+        overflow: visible;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header .menu-icon{
+        display: none;
+    }
+    
+    .hero h1{
+        font-size: 4.7vw;
+    }
+
+    .hero p{
+        font-size: 2vw;
+    }
+
+    .about{
+        font-size: 1.3vw;
+    }
+}
+
