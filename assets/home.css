@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FEFAE0;
+}
+
+.grid-conteiner {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+}
+
+a {
+  color: #283618;
+  text-decoration: none;
+}
+
+.header {
+  grid-row: 1;
+  background-color: #606C38;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #606C38;
+}
+.header ul a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+.header ul a:hover {
+  background-color: #505a2e;
+}
+.header .logo {
+  float: left;
+  font-size: 25px;
+  padding: 10px 20px;
+}
+.header .menu {
+  clear: both; /*toglie la regola del float che incide sul menu*/
+  max-height: 0; /*nasconde il menu per fare si che non si veda da mobile*/
+  transition: max-height 0.2s ease-out;
+}
+.header .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.header .menu-icon .nav-icon {
+  background-color: #283618;
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: relative;
+  transition: background-color 0.2s ease-out;
+}
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon::after {
+  background-color: #283618;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  top: 5px;
+}
+.header .menu-icon .nav-icon::before {
+  top: 5px;
+}
+.header .menu-icon .nav-icon::after {
+  top: -5px;
+}
+.header .menu-btn {
+  display: none; /*display e' il modo in cui gli elementi vengono fatti vedere a schermo*/
+}
+.header .menu-btn:checked ~ .menu { /*mi devi fare effetto su un fratello della checkbox*/
+  max-height: 240px;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background-color: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 48em) { /*deve essere come mimimo 48 senno vai in modalita mobile*/
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none; /*lo porta invece che sotto accanto al logo*/
+    float: right;
+    max-height: 0;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+/*togliere overflow per far vedere il menu*/
+/*aggiungere lo switch per la lingua*/
+main {
+  grid-row: 2;
+}
+main .hero {
+  background: url("https://i.pinimg.com/736x/b4/1a/8a/b41a8acccf85813efcddf1d93061ecc6.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  color: #FEFAE0;
+}
+main button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background: #606C38;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=home.css.map */
