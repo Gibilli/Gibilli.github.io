@@ -3,7 +3,7 @@ main{
     grid-row: 2;
     h2{
         text-align: center;
-        color: $text;
+        color: $text;//da cambiare e metterne uno carino
     }
     .hero{
         position: relative;
@@ -28,7 +28,8 @@ main{
         p{
             margin: $med $min;
         }
-       
+
+       //bottone responsive
         button{
             border-radius: $bottone;
             padding: $min $med;
@@ -57,39 +58,68 @@ main{
           }
     }
 
-    .about {
+    .about { //layout per mobile
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center; /* Centra immagine e testo in modalità mobile */
         text-align: center;
         padding: 20px;
     
         img {
-            height: 300px;
+            height: 250px;//mi piacerebbe foto responsive
             width: auto; /* Mantiene le proporzioni */
             margin-bottom: 20px; /* Spazio tra immagine e testo */
+            border-radius: $radius;
         }
-    
-        p {
-            max-width: 600px; /* Limita la larghezza del testo */
-        }
+
+    //progetti
+        //farla con bootstrap
+        //fare una 
+        //farla responsive per i vari dispositivi
+        //cambiare la grandezza delle immagini
+        //sul mobile fare tutta la larghezzza della pagina
+        //su desktop fare col border radius display flex content center e un margine dalla fine della pagina
+        //nel caso in cui non riesca a modificare bootstrap si puo anche mettere le due diverse cose direttamente nei layout
+
+
+    //contatti
+        //border-radius input
+        //text area height
+        //button border radius, uguale a quello del hero anche perche il responsive voglio che sia lo stesso
+
+
+
+        //layout mobile
+        //fare una versione molto piu corta del testo e mettere un bottone per la pagina about me
+        //se vuoi saperne di piu clicca qui
+
+
+
     
         /* Layout per desktop */
-        @media (min-width: 768px) {
+        @media (min-width: 768px) {//non ho capito perche se lo metto fuori non funziona
             flex-direction: row;
-            align-items: flex-start; /* Allinea in alto l'immagine e il testo */
             text-align: left;
-            justify-content: space-between; /* Distribuisce uniformemente */
-    
+            margin: $min;
+            display: flex;
+            justify-content: center;
+
+    //immagine che sia piu vicina al testo e il testo ce prende il 70% della 
+    //grandezza e poi l'immagine si adatta con un  margin i conseguenza
             img {
-                margin-bottom: 0; /* Rimuove lo spazio in modalità desktop */
-                margin-right: 20px; /* Spazio tra immagine e testo */
-                padding-left: 20%;
+                margin-left: $med; /* Spazio tra testo e immagine */
+                margin-bottom: 0; /* Rimuove lo spazio in desktop */
             }
     
             p {
-                max-width: 50%; /* Limita la larghezza del testo per desktop */
+                margin-right: $med; /* Spazio tra immagine e testo */
+                width: 60%;
             }
+
+            //fare una versione piu corta del testo e mettere un bottone per la pagina about me
+            //se vuoi saperne di piu clicca qui
+
+
         }
     }    
 }

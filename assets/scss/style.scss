@@ -3,6 +3,12 @@
 @import 'header';
 @import 'home';
 
+.grid-conteiner{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+}
+
 /*font-family*/
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
@@ -35,19 +41,23 @@ a{
     .hero p{
         font-size: 4vw;
     }
+    //button responsive
+    //p con grandezze responsive
+    //padding responsive
 
-    .about{
-        font-size: 4vw;
-    }
+    //foto about responsive
+
+    //titolo h2 responsive
+    //1.5em -> 1.5vw
 }
 
 @media (min-width: 48em){ //desktop
     .header li{
-        float: left;
+        float: left;//??
     }
 
     .header .menu{
-        clear: none;
+        clear: none;//??
         float: right;
         max-height: 0;
         max-height: none;
@@ -57,7 +67,7 @@ a{
     }
 
     .header .menu-icon{
-        display: none;
+        display: none;//??
     }
     
     .hero h1{
@@ -67,9 +77,12 @@ a{
     .hero p{
         font-size: 2vw;
     }
+    //button responsive
+    //p con grandezze responsive
+    //padding responsive
 
-    .about{
-        font-size: 1.3vw;
-    }
+    //foto about responsive
+
+    //titolo h2 responsive
 }
 

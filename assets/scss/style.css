@@ -1,10 +1,4 @@
 @charset "UTF-8";
-.grid-conteiner {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
-}
-
 .header {
   grid-row: 1;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
@@ -154,35 +148,40 @@ main .hero #overlay {
 }
 main .about {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center; /* Centra immagine e testo in modalità mobile */
   text-align: center;
   padding: 20px;
   /* Layout per desktop */
 }
 main .about img {
-  height: 300px;
+  height: 250px;
   width: auto; /* Mantiene le proporzioni */
   margin-bottom: 20px; /* Spazio tra immagine e testo */
-}
-main .about p {
-  max-width: 600px; /* Limita la larghezza del testo */
+  border-radius: 10%;
 }
 @media (min-width: 768px) {
   main .about {
     flex-direction: row;
-    align-items: flex-start; /* Allinea in alto l'immagine e il testo */
     text-align: left;
-    justify-content: space-between; /* Distribuisce uniformemente */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
   }
   main .about img {
-    margin-bottom: 0; /* Rimuove lo spazio in modalità desktop */
-    margin-right: 20px; /* Spazio tra immagine e testo */
-    padding-left: 20%;
+    margin-left: 20px; /* Spazio tra testo e immagine */
+    margin-bottom: 0; /* Rimuove lo spazio in desktop */
   }
   main .about p {
-    max-width: 50%; /* Limita la larghezza del testo per desktop */
+    margin-right: 20px; /* Spazio tra immagine e testo */
+    width: 60%;
   }
+}
+
+.grid-conteiner {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
 }
 
 /*font-family*/
@@ -212,9 +211,6 @@ a {
   .hero p {
     font-size: 4vw;
   }
-  .about {
-    font-size: 4vw;
-  }
 }
 @media (min-width: 48em) {
   .header li {
@@ -237,8 +233,5 @@ a {
   }
   .hero p {
     font-size: 2vw;
-  }
-  .about {
-    font-size: 1.3vw;
   }
 }/*# sourceMappingURL=style.css.map */
