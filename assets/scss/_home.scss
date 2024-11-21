@@ -30,7 +30,7 @@ main{
 
        //bottone responsive
         button{
-            border-radius: $bottone;
+            border-radius: $button;
             padding: $min $med;
             margin: $min;
             border: none;
@@ -74,6 +74,9 @@ main{
             border-radius: $radius;
         }
 
+        p{
+            color: $text;
+        }
 
 
         //desktop
@@ -90,7 +93,7 @@ main{
             }
     
             p {
-                margin-right: $med; /* Spazio tra immagine e testo */
+                margin-right: $max; /* Spazio tra immagine e testo */
                 width: 60%;
             }
 
@@ -101,8 +104,68 @@ main{
         }
     }
 
+    //skill
+    .skill{
+        display: grid;
+        flex-direction: row;
+        gap: $med;
+        justify-content: center;
+        div{
+            h3{
+                text-align: center;
+                margin: $min;
+            }
+            background-color: $header;
+            width: 300px;
+            border-radius: $button;
+            box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, .1);
+            color: $text;
+        }
+        @media (min-width: 48em){
+            flex-direction: row;
+            text-align: left;
+            margin: $min;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+
     //contatti
         //border-radius input
         //text area height
         //button border radius, uguale a quello del hero anche perche il responsive voglio che sia lo stesso
+        .contacts{
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: auto $max;
+
+            input,
+            textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            }
+
+            button {
+                background: $header;
+                color: #fff;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: $button;
+                font-size: 1rem;
+            }
+            
+            button:hover{
+                background: $button-hover;
+                color: $header;
+            }
+            @media (min-width: 48em){ //desktop
+                margin: auto;
+            }
+        }
 }

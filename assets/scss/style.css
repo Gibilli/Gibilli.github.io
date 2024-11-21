@@ -95,7 +95,7 @@ main {
 }
 main h2 {
   text-align: center;
-  color: #333333;
+  color: #f1f1f1;
 }
 main .hero {
   position: relative;
@@ -159,6 +159,9 @@ main .about img {
   margin-bottom: 20px;
   border-radius: 10%;
 }
+main .about p {
+  color: #f1f1f1;
+}
 @media (min-width: 768px) {
   main .about {
     flex-direction: row;
@@ -172,9 +175,91 @@ main .about img {
     margin-bottom: 0; /* Rimuove lo spazio in desktop */
   }
   main .about p {
-    margin-right: 20px; /* Spazio tra immagine e testo */
+    margin-right: 30px; /* Spazio tra immagine e testo */
     width: 60%;
   }
+}
+main .skill {
+  display: grid;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+main .skill div {
+  background-color: #1A1A2E;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.1);
+  color: #f1f1f1;
+}
+main .skill div h3 {
+  text-align: center;
+  margin: 10px;
+}
+@media (min-width: 48em) {
+  main .skill {
+    flex-direction: row;
+    text-align: left;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+main .contacts {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: auto 30px;
+}
+main .contacts input,
+main .contacts textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+main .contacts button {
+  background: #1A1A2E;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+main .contacts button:hover {
+  background: #FFD700;
+  color: #1A1A2E;
+}
+@media (min-width: 48em) {
+  main .contacts {
+    margin: auto;
+  }
+}
+
+footer {
+  grid-row: 3;
+  background-color: #e08f8f;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+footer ul img {
+  height: 40px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  padding: 0 30px;
 }
 
 .grid-conteiner {
@@ -189,14 +274,18 @@ h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  margin-top: 50px !important;
+}
+
 body, p, li {
   font-family: "Roboto", sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: #F9F9F9;
-  color: #333333;
+  background-color: #37375e !important;
+  color: #f1f1f1;
 }
 
 .header-custom a {

@@ -2,6 +2,7 @@
 @import 'formats';
 @import 'header';
 @import 'home';
+@import 'footer';
 
 .grid-conteiner{
     display: grid;
@@ -15,6 +16,10 @@ h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+h2{
+    margin-top: 50px !important;
+}
+
 body, p, li {
     font-family: 'Roboto', sans-serif;
 }
@@ -22,7 +27,7 @@ body, p, li {
 
 body{
     margin: 0;
-    background-color: $body;
+    background-color: $body !important;
     color: $text; 
 }
 
