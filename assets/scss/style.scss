@@ -28,7 +28,7 @@ body{
 
 
 
-a{
+.header-custom a{
     text-decoration: none;
     color: $link;
 }
@@ -58,11 +58,11 @@ a{
 }
 
 @media (min-width: 48em){ //desktop
-    .header li{
+    .header-custom li{
         float: left;//??
     }
 
-    .header .menu{
+    .header-custom .menu{
         clear: none;//??
         float: right;
         max-height: 0;
@@ -72,7 +72,7 @@ a{
         flex-direction: row;
     }
 
-    .header .menu-icon{
+    .header-custom .menu-icon{
         display: none;//??
     }
     

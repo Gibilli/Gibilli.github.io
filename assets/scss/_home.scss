@@ -59,14 +59,18 @@ main{
     .about { //layout per mobile
         display: flex;
         flex-direction: column-reverse;
-        align-items: center; /* Centra immagine e testo in modalità mobile */
+        align-items: center;
         text-align: center;
         padding: 20px;
     
+        h2{
+            margin: $min;
+        }
+
         img {
             height: 250px;//mi piacerebbe foto responsive
-            width: auto; /* Mantiene le proporzioni */
-            margin-bottom: 20px; /* Spazio tra immagine e testo */
+            width: auto; 
+            margin-bottom: 20px;
             border-radius: $radius;
         }
 
@@ -80,8 +84,6 @@ main{
             display: flex;
             justify-content: center;
 
-    //immagine che sia piu vicina al testo e il testo ce prende il 70% della 
-    //grandezza e poi l'immagine si adatta con un  margin i conseguenza
             img {
                 margin-left: $med; /* Spazio tra testo e immagine */
                 margin-bottom: 0; /* Rimuove lo spazio in desktop */
@@ -98,18 +100,6 @@ main{
 
         }
     }
-    .projects{
-
-    }
-    //progetti
-        //farla con bootstrap
-        //fare una 
-        //farla responsive per i vari dispositivi
-        //cambiare la grandezza delle immagini
-        //sul mobile fare tutta la larghezzza della pagina
-        //su desktop fare col border radius display flex content center e un margine dalla fine della pagina
-        //nel caso in cui non riesca a modificare bootstrap si puo anche mettere le due diverse cose direttamente nei layout
-
 
     //contatti
         //border-radius input
