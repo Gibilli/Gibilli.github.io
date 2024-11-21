@@ -1,4 +1,3 @@
-/*add a language switch*/
 main{
     grid-row: 2;
     h2{
@@ -34,7 +33,6 @@ main{
             border-radius: $bottone;
             padding: $min $med;
             margin: $min;
-            font-size: 1.2rem;
             border: none;
             cursor: pointer;
             background: $header;
@@ -72,31 +70,9 @@ main{
             border-radius: $radius;
         }
 
-    //progetti
-        //farla con bootstrap
-        //fare una 
-        //farla responsive per i vari dispositivi
-        //cambiare la grandezza delle immagini
-        //sul mobile fare tutta la larghezzza della pagina
-        //su desktop fare col border radius display flex content center e un margine dalla fine della pagina
-        //nel caso in cui non riesca a modificare bootstrap si puo anche mettere le due diverse cose direttamente nei layout
 
 
-    //contatti
-        //border-radius input
-        //text area height
-        //button border radius, uguale a quello del hero anche perche il responsive voglio che sia lo stesso
-
-
-
-        //layout mobile
-        //fare una versione molto piu corta del testo e mettere un bottone per la pagina about me
-        //se vuoi saperne di piu clicca qui
-
-
-
-    
-        /* Layout per desktop */
+        //desktop
         @media (min-width: 768px) {//non ho capito perche se lo metto fuori non funziona
             flex-direction: row;
             text-align: left;
@@ -121,5 +97,22 @@ main{
 
 
         }
-    }    
+    }
+    .projects{
+
+    }
+    //progetti
+        //farla con bootstrap
+        //fare una 
+        //farla responsive per i vari dispositivi
+        //cambiare la grandezza delle immagini
+        //sul mobile fare tutta la larghezzza della pagina
+        //su desktop fare col border radius display flex content center e un margine dalla fine della pagina
+        //nel caso in cui non riesca a modificare bootstrap si puo anche mettere le due diverse cose direttamente nei layout
+
+
+    //contatti
+        //border-radius input
+        //text area height
+        //button border radius, uguale a quello del hero anche perche il responsive voglio che sia lo stesso
 }
