@@ -11,19 +11,17 @@
     height: 100%;
 }
 
-/*font-family*/
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-}
-
-h2{
-    margin-top: 50px !important;
 }
 
 body, p, li {
     font-family: 'Roboto', sans-serif;
 }
 
+h2{
+    margin-top: 50px !important;
+}
 
 body{
     margin: 0;
@@ -51,15 +49,6 @@ body{
     .hero button{
         font-size: 4vw;
     }
-
-    //button responsive
-    //p con grandezze responsive
-    //padding responsive
-
-    //foto about responsive
-
-    //titolo h2 responsive
-    //1.5em -> 1.5vw
 }
 
 @media (min-width: 48em){ //desktop
@@ -92,12 +81,4 @@ body{
     .hero button{
         font-size: 1.7vw;
     }
-
-    //p con grandezze responsive
-    //padding responsive
-
-    //foto about responsive
-
-    //titolo h2 responsive
 }
-
