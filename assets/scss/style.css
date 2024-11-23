@@ -236,20 +236,20 @@ main .contacts button:hover {
   }
 }
 
-footer {
+.footer {
   background-color: #e08f8f;
   text-align: center;
   padding: 20px;
   margin-top: 50px;
 }
-footer ul {
+.footer ul {
   display: flex;
   list-style: none;
   justify-content: center;
   padding: 0;
   margin: 0;
 }
-footer ul img {
+.footer ul img {
   height: 40px;
   width: auto;
   -o-object-fit: cover;
