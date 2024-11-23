@@ -4,6 +4,12 @@
 @import 'home';
 @import 'footer';
 
+body{
+    margin: 0;
+    background-color: $body !important;
+    color: $text;
+}
+
 .grid-conteiner{
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -23,13 +29,10 @@ h2{
     margin-top: 50px !important;
 }
 
-body{
-    margin: 0;
-    background-color: $body !important;
-    color: $text; 
+main{
+    flex: 1;
+    padding-top: 68px;
 }
-
-
 
 .header-custom a{
     text-decoration: none;

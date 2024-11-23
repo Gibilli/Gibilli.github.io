@@ -90,9 +90,6 @@
   top: 0;
 }
 
-main {
-  grid-row: 2;
-}
 main h2 {
   text-align: center;
   color: #f1f1f1;
@@ -127,19 +124,6 @@ main .hero button {
   background: #1A1A2E;
   color: #FFD700;
   transition: background 0.3 ease;
-}
-main .hero button a {
-  text-decoration: none;
-  color: #FFD700;
-}
-main .hero a:hover {
-  color: #1A1A2E;
-}
-main .hero a:active {
-  color: #FFD700;
-}
-main .hero a:visited {
-  color: #FFD700;
 }
 main .hero button:hover {
   background: #FFD700;
@@ -253,11 +237,10 @@ main .contacts button:hover {
 }
 
 footer {
-  grid-row: 3;
   background-color: #e08f8f;
   text-align: center;
-  margin-top: 50px;
   padding: 20px;
+  margin-top: 50px;
 }
 footer ul {
   display: flex;
@@ -273,6 +256,12 @@ footer ul img {
      object-fit: cover;
   border-radius: 100%;
   padding: 0 30px;
+}
+
+body {
+  margin: 0;
+  background-color: #37375e !important;
+  color: #f1f1f1;
 }
 
 .grid-conteiner {
@@ -294,10 +283,9 @@ h2 {
   margin-top: 50px !important;
 }
 
-body {
-  margin: 0;
-  background-color: #37375e !important;
-  color: #f1f1f1;
+main {
+  flex: 1;
+  padding-top: 68px;
 }
 
 .header-custom a {

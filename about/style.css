@@ -1,1 +1,94 @@
-/*# sourceMappingURL=style.css.map */
+main h1 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #FFD700;
+}
+main .chi-sono {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+main .chi-sono img {
+  height: 250px;
+  width: auto;
+  margin-bottom: 20px;
+  border-radius: 10%;
+}
+main .chi-sono p {
+  color: #f1f1f1;
+}
+@media (min-width: 48em) {
+  main .chi-sono {
+    flex-direction: row;
+    text-align: left;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  main .chi-sono img {
+    margin-left: 20px;
+    margin-bottom: 0;
+    height: 350px;
+  }
+  main .chi-sono p {
+    margin-right: 30px;
+    width: 60%;
+  }
+}
+main .project-info {
+  background-color: #1A1A2E; /* Un colore neutro per il contrasto */
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+main .project-info p {
+  color: #f1f1f1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+main .project-info a {
+  color: #FFD700; /* Un blu per link che si abbina bene */
+  text-decoration: none;
+  font-weight: bold;
+}
+main .project-info a:hover {
+  text-decoration: underline;
+}
+main #contacts h2 {
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+main #contacts h3 {
+  text-align: center;
+  color: #FFD700;
+}
+@media (max-width: 48em) {
+  main h1 {
+    font-size: 2.5em;
+  }
+  main h2 {
+    font-size: 2em;
+  }
+  main h3 {
+    margin-top: 10px;
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 48em) {
+  main h1 {
+    font-size: 3em;
+  }
+  main h2 {
+    font-size: 2.5em;
+  }
+  main h3 {
+    margin-top: 20px;
+    font-size: 2.3em;
+  }
+}/*# sourceMappingURL=style.css.map */
