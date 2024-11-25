@@ -1,1 +1,7 @@
-/*# sourceMappingURL=style.css.map */
+main .vertical-hr {
+  border-left: 1px solid #1A1A2E;
+  height: 100px;
+}
+main hr {
+  border-color: #1A1A2E;
+}/*# sourceMappingURL=style.css.map */

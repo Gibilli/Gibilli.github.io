@@ -1,0 +1,15 @@
+@import '../assets/scss/colors';
+@import '../assets/scss/formats';
+
+main{
+    .vertical-hr {
+        border-left: 1px solid $header;
+        height: 100px;
+      }
+      hr{
+        border-color: $header;
+      }
+}
+//voglio un bordo al cv che quindi ha un div esterno che ha un colore diverso da il background del sito
+//
+
