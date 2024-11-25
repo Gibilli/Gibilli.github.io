@@ -1,7 +1,7 @@
 .header-custom{
     grid-row: 1;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
-    position: fixed;
+    position: fixed;//dovrebbe essere sticky
     width: 100%;
     z-index: 1000;
     background-color: $header;

@@ -80,7 +80,7 @@ main{
 
 
         //desktop
-        @media (min-width: 768px) {//non ho capito perche se lo metto fuori non funziona
+        @media (min-width: 768px) {//mettere 48em
             flex-direction: row;
             text-align: left;
             margin: $min;
