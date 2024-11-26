@@ -1,15 +1,106 @@
 @import '../assets/scss/colors';
 @import '../assets/scss/formats';
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+//i want a cv border for the cv div that contasins all the info
+
+
 
 main{
-    .vertical-hr {
-        border-left: 1px solid $header;
-        height: 100px;
+    h1{
+      text-align: center;
+      color: $link;
+      margin: 50px;
+    }
+    h2{
+      font-family: "Questrial", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+      .cv{
+        border: 2px solid $header;
+        border-radius: 10px;
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+        background-color: $text;
+        color: $dark-text;
+
+        .info{
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+
+          img {
+            height: 250px;//mi piacerebbe foto responsive
+            width: auto; 
+            margin-bottom: 20px;
+            border-radius: $radius;
+            border: 3px solid $cv;
+          }
+
+          //desktop
+          @media (min-width: 48em) {
+            flex-direction: row;
+            display: flex;
+            margin: $min;
+            justify-content: center;
+
+            img {
+                margin-left: 40%;
+                margin-bottom: 0;
+            }
+    
+            h2 {
+                text-align: left;
+            }
+          }
+        }
+
+        .vertical-hr {
+          border-left: 2px solid $cv;
+          height: 100px;
+        }
+
+        hr{
+          border-color: $cv;
+          margin: 0;
+        }
+
+        h2{
+          color: $dark-text;
+        }
+
+    }
+    @media (max-width: 48em){//mobile
+      h1{
+          font-size: 2.5em;
       }
-      hr{
-        border-color: $header;
+
+      h2{//solo ginevra billi gli altri piu piccoli, o li metto h3
+          font-size: 2em;
       }
+      h3{
+          margin-top: $min;
+          font-size: 1.7em;
+      }
+  }
+
+  @media (min-width: 48em){//desktop
+      h1{
+          font-size: 3.2em;
+      }
+
+      h2{
+          font-size: 3em;
+      }
+
+      h3{
+          margin-top: $med;
+          font-size: 2.3em;
+      }
+  }
 }
-//voglio un bordo al cv che quindi ha un div esterno che ha un colore diverso da il background del sito
-//
+
 

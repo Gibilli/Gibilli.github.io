@@ -80,7 +80,7 @@ main{
 
 
         //desktop
-        @media (min-width: 768px) {//mettere 48em
+        @media (min-width: 48em) {
             flex-direction: row;
             text-align: left;
             margin: $min;

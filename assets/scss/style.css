@@ -159,7 +159,7 @@ main .about img {
 main .about p {
   color: #f1f1f1;
 }
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   main .about {
     flex-direction: row;
     text-align: left;

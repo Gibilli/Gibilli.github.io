@@ -1,7 +1,84 @@
-main .vertical-hr {
-  border-left: 1px solid #1A1A2E;
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+main h1 {
+  text-align: center;
+  color: #FFD700;
+  margin: 50px;
+}
+main h2 {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main .cv {
+  border: 2px solid #1A1A2E;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  background-color: #f1f1f1;
+  color: #333333;
+}
+main .cv .info {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+main .cv .info img {
+  height: 250px;
+  width: auto;
+  margin-bottom: 20px;
+  border-radius: 10%;
+  border: 3px solid #2b4257;
+}
+@media (min-width: 48em) {
+  main .cv .info {
+    flex-direction: row;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+  }
+  main .cv .info img {
+    margin-left: 40%;
+    margin-bottom: 0;
+  }
+  main .cv .info h2 {
+    text-align: left;
+  }
+}
+main .cv .vertical-hr {
+  border-left: 2px solid #2b4257;
   height: 100px;
 }
-main hr {
-  border-color: #1A1A2E;
+main .cv hr {
+  border-color: #2b4257;
+  margin: 0;
+}
+main .cv h2 {
+  color: #333333;
+}
+@media (max-width: 48em) {
+  main h1 {
+    font-size: 2.5em;
+  }
+  main h2 {
+    font-size: 2em;
+  }
+  main h3 {
+    margin-top: 10px;
+    font-size: 1.7em;
+  }
+}
+@media (min-width: 48em) {
+  main h1 {
+    font-size: 3.2em;
+  }
+  main h2 {
+    font-size: 3em;
+  }
+  main h3 {
+    margin-top: 20px;
+    font-size: 2.3em;
+  }
 }/*# sourceMappingURL=style.css.map */
