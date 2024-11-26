@@ -91,4 +91,33 @@ main #contacts h3 {
     margin-top: 20px;
     font-size: 2.3em;
   }
+}
+
+.footer-about {
+  background-color: #e08f8f;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+.footer-about ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.footer-about ul img {
+  height: 40px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  padding: 0 30px;
+}
+@media (min-height: 1410px) {
+  .footer-about {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

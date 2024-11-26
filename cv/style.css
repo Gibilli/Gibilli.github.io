@@ -4,16 +4,11 @@ main h1 {
   color: #FFD700;
   margin: 50px;
 }
-main h2 {
-  font-family: "Questrial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 main .cv {
   border: 2px solid #1A1A2E;
   border-radius: 10px;
-  padding: 10px;
-  width: 80%;
+  padding: 20px;
+  width: 70%;
   margin: auto;
   background-color: #f1f1f1;
   color: #333333;
@@ -30,7 +25,14 @@ main .cv .info img {
   width: auto;
   margin-bottom: 20px;
   border-radius: 10%;
-  border: 3px solid #2b4257;
+  border: 4px solid #6da7cc;
+}
+main .cv .info h2 {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  margin: 20px !important;
 }
 @media (min-width: 48em) {
   main .cv .info {
@@ -47,16 +49,12 @@ main .cv .info img {
     text-align: left;
   }
 }
-main .cv .vertical-hr {
-  border-left: 2px solid #2b4257;
-  height: 100px;
-}
 main .cv hr {
-  border-color: #2b4257;
+  border-color: #6da7cc;
   margin: 0;
 }
-main .cv h2 {
-  color: #333333;
+main .cv .container {
+  margin: 0 20px;
 }
 @media (max-width: 48em) {
   main h1 {
@@ -79,6 +77,41 @@ main .cv h2 {
   }
   main h3 {
     margin-top: 20px;
-    font-size: 2.3em;
+    font-size: 1.5em;
+  }
+  main .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 20% 40px 20%;
+    gap: 40px;
+  }
+}
+
+.footer-cv {
+  background-color: #e08f8f;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+.footer-cv ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.footer-cv ul img {
+  height: 40px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  padding: 0 30px;
+}
+@media (min-height: 1410px) {
+  .footer-cv {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
