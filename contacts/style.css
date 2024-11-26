@@ -21,9 +21,6 @@ main #contacts p {
   text-align: center;
   padding: 20px;
   margin-top: 50px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 .contacts-footer ul {
   display: flex;
@@ -39,4 +36,11 @@ main #contacts p {
      object-fit: cover;
   border-radius: 100%;
   padding: 0 30px;
+}
+@media (min-height: 800px) {
+  .contacts-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
