@@ -145,12 +145,12 @@
             </section>
             <section>
                 <h2>Contattami</h2>
-                <form action="/" class="contacts"> <!--da inserire coso per i form-->
-                    <input type="text" name="fname" placeholder="First name">
-                    <input type="text" name="lname" placeholder="Last name">
-                    <input type="email" name="email" placeholder="Email">
-                    <textarea name="your-message" id="message" placeholder="Message"></textarea>
-                    <button>Send message</button>
+                <form id="contact-form" class="contacts">
+                    <input type="text" name="fname" placeholder="Nome" required>
+                    <input type="text" name="lname" placeholder="Cognome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" id="message" placeholder="Il tuo messaggio"></textarea>
+                    <button type="submit">Send message</button>
                 </form>
             </section>
         </main>
@@ -162,5 +162,26 @@
             </ul>
         </footer>
     </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            emailjs.init('1_YhfDn60aSGspj-n');
+          
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+              e.preventDefault();
+          
+              emailjs.sendForm(
+                'service_qjhprk9', 
+                'template_v0hjpgf',
+                this
+              )
+              .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Messaggio inviato con successo!');
+              }, function(error) {
+                console.log('FAILED...', error);
+                alert('Errore durante l\'invio del messaggio. Riprova.');
+              });
+            });
+          </script>
 </body>
 </html>

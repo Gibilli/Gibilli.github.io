@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ginevra Billi - Portfolio</title>
+        <title>Ginevra Billi - Dove puoi contattarmi</title>
         <link rel="icon" type="image/x-icon" href="../assets/favicon/android-chrome-512x512.png">
         <link rel="stylesheet" href="/contacts/style.css">
         <link rel="stylesheet" href="../assets/scss/style.css">
@@ -27,14 +27,20 @@
                 <section id="contacts">
                     <h1>Contattami</h1>
                     <p>
-                        Se il mio portfolio ti ha incuriosito e pensi che il mio profilo possa essere un buon match per il tuo team, sarò felice di conoscerti meglio! Compilando il form qui sotto, avrai l'opportunità di entrare in contatto con me e discutere di come potrei contribuire al successo dei tuoi progetti. Sia che tu stia cercando un sviluppatore per un ruolo full-stack o un team player pronto a dare il massimo, sono entusiasta di esplorare insieme le possibilità di collaborazione. Non vedo l’ora di poter mettere le mie competenze al servizio della tua squadra!
+                        Se il mio portfolio ti ha incuriosito e pensi che il mio profilo possa 
+                        essere un buon match per il tuo team, sarò felice di conoscerti meglio! 
+                        Compilando il form qui sotto, avrai l'opportunità di entrare in contatto 
+                        con me e discutere di come potrei contribuire al successo dei tuoi progetti. 
+                        Sia che tu stia cercando un sviluppatore per un ruolo full-stack o un team player pronto a 
+                        dare il massimo, sono entusiasta di esplorare insieme le possibilità di collaborazione. 
+                        Non vedo l’ora di poter mettere le mie competenze al servizio della tua squadra!
                     </p>
-                    <form action="/" class="contacts"><!--da inserire coso per i form-->
-                        <input type="text" name="fname" placeholder="First name">
-                        <input type="text" name="lname" placeholder="Last name">
-                        <input type="email" name="email" placeholder="Email">
-                        <textarea name="your-message" id="message" placeholder="Message"></textarea>
-                        <button>Send message</button>
+                    <form id="contact-form" class="contacts">
+                        <input type="text" name="fname" placeholder="Nome" required>
+                        <input type="text" name="lname" placeholder="Cognome" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" id="message" placeholder="Il tuo messaggio"></textarea>
+                        <button type="submit">Send message</button>
                     </form>
                 </section>
             </main>
@@ -46,5 +52,27 @@
                 </ul>
             </footer>
         </div>
+
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            emailjs.init('1_YhfDn60aSGspj-n');
+          
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+              e.preventDefault();
+          
+              emailjs.sendForm(
+                'service_qjhprk9',
+                'template_v0hjpgf',
+                this
+              )
+              .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Messaggio inviato con successo!');
+              }, function(error) {
+                console.log('FAILED...', error);
+                alert('Errore durante l\'invio del messaggio. Riprova.');
+              });
+            });
+          </script>
     </body>
 </html>
