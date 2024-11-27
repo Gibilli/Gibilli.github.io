@@ -185,6 +185,15 @@ main .projects .w-100 {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .projects .div-text {
+  background-color: rgba(26, 26, 46, 0.774); /* Un colore neutro per il contrasto */
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+main .projects .div-text p {
+  margin: 0;
+}
 main .skill {
   display: grid;
   flex-direction: row;
@@ -213,7 +222,7 @@ main .skill div h3 {
   }
 }
 main .project-info {
-  background-color: #1A1A2E; /* Un colore neutro per il contrasto */
+  background-color: #1A1A2E;
   padding: 20px;
   margin: 40px auto;
   text-align: center;
