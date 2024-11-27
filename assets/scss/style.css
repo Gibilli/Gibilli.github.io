@@ -129,7 +129,7 @@ main .hero button:hover {
   background: #FFD700;
   color: #1A1A2E;
 }
-main .hero #overlay {
+main .hero .overlay {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -175,6 +175,15 @@ main .about p {
     margin-right: 30px;
     width: 60%;
   }
+}
+main .projects {
+  position: relative;
+}
+main .projects .d-block,
+main .projects .w-100 {
+  height: 700px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .skill {
   display: grid;
