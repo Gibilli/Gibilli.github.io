@@ -2,7 +2,6 @@
 @import '../assets/scss/formats';
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
-//il footer per grandezze schermo piu grandi non arriva in fondo per cui posso fare if schermo piu grande di tot metti il coso come su contatti
 
 main{
     h1{
@@ -28,7 +27,7 @@ main{
           padding: 20px;
 
           img {
-            height: 250px;//mi piacerebbe foto responsive
+            height: 250px;
             width: auto; 
             margin-bottom: 20px;
             border-radius: $radius;

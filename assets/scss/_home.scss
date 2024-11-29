@@ -5,7 +5,6 @@ main{
     }
     .hero{
         position: relative;
-        //vorrei cambiare la foto di sfondo con una che sia ad alta risoluzione e magari in realta farne due una per desktop ad alta risoluzione ed una mobile
         background: url('https://i.pinimg.com/736x/b4/1a/8a/b41a8acccf85813efcddf1d93061ecc6.jpg') no-repeat center center/cover;
         height: 100vh;
         display: flex;
@@ -13,6 +12,10 @@ main{
         justify-content: center;
         text-align: center;
         z-index: 1;
+
+        @media (min-width: 48em){
+            background: url(https://www.techspot.com/images2/news/bigimage/2024/09/2024-09-03-image-32.jpg) no-repeat center center/cover;
+        }
 
         .hero-text{
             position: relative;
@@ -69,7 +72,7 @@ main{
         }
 
         img {
-            height: 250px;//mi piacerebbe foto responsive
+            height: 350px;//mi piacerebbe foto responsive
             width: auto; 
             margin-bottom: 20px;
             border-radius: $radius;

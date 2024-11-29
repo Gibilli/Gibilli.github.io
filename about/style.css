@@ -12,7 +12,7 @@ main .chi-sono {
   padding: 20px;
 }
 main .chi-sono img {
-  height: 250px;
+  height: 320px;
   width: auto;
   margin-bottom: 20px;
   border-radius: 10%;
@@ -31,7 +31,7 @@ main .chi-sono p {
   main .chi-sono img {
     margin-left: 20px;
     margin-bottom: 0;
-    height: 350px;
+    height: 500px;
   }
   main .chi-sono p {
     margin-right: 30px;
@@ -61,7 +61,7 @@ main .project-info a:hover {
   text-decoration: underline;
 }
 main #contacts h2 {
-  padding-top: 30px;
+  padding: 30px 10px 0 10px;
   margin-bottom: 0;
 }
 main #contacts h3 {

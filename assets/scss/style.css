@@ -104,6 +104,11 @@ main .hero {
   text-align: center;
   z-index: 1;
 }
+@media (min-width: 48em) {
+  main .hero {
+    background: url(https://www.techspot.com/images2/news/bigimage/2024/09/2024-09-03-image-32.jpg) no-repeat center center/cover;
+  }
+}
 main .hero .hero-text {
   position: relative;
   z-index: 3;
@@ -151,7 +156,7 @@ main .about h2 {
   margin: 10px;
 }
 main .about img {
-  height: 250px;
+  height: 350px;
   width: auto;
   margin-bottom: 20px;
   border-radius: 10%;
