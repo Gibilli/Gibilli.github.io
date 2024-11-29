@@ -29,7 +29,7 @@ main{
     
     
         //desktop
-        @media (min-width: 48em) {//non ho capito perche se lo metto fuori non funziona
+        @media (min-width: 48em) {
             flex-direction: row;
             text-align: left;
             margin: $min;
@@ -51,7 +51,7 @@ main{
     
     .project-info {
     
-        background-color: $header; /* Un colore neutro per il contrasto */
+        background-color: $header;
         padding: $med;
         margin: $med auto;
         text-align: center;
@@ -64,7 +64,7 @@ main{
             line-height: 1.6;
         }
         a{
-            color: $link; /* Un blu per link che si abbina bene */
+            color: $link;
             text-decoration: none;
             font-weight: bold;
         }

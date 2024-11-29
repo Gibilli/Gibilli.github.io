@@ -68,11 +68,11 @@ main{
 
 @media (min-width: 48em){ //desktop
     .header-custom li{
-        float: left;//??
+        float: left;
     }
 
     .header-custom .menu{
-        clear: none;//??
+        clear: none;
         float: right;
         max-height: 0;
         max-height: none;
@@ -82,7 +82,7 @@ main{
     }
 
     .header-custom .menu-icon{
-        display: none;//??
+        display: none;
     }
     
     .hero h1{

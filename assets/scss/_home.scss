@@ -1,7 +1,7 @@
 main{
     h2{
         text-align: center;
-        color: $text;//da cambiare e metterne uno carino
+        color: $text;
     }
     .hero{
         position: relative;
@@ -72,7 +72,7 @@ main{
         }
 
         img {
-            height: 350px;//mi piacerebbe foto responsive
+            height: 350px;
             width: auto; 
             margin-bottom: 20px;
             border-radius: $radius;
@@ -111,7 +111,7 @@ main{
             object-fit: cover;
         }
         .div-text{
-            background-color: rgba(26, 26, 46, 0.774); /* Un colore neutro per il contrasto */
+            background-color: rgba(26, 26, 46, 0.774);
             padding: $min 0;
             text-align: center;
             border-radius: 8px;
@@ -163,7 +163,7 @@ main{
             line-height: 1.6;
         }
         a{
-            color: $link; /* Un blu per link che si abbina bene */
+            color: $link;
             text-decoration: none;
             font-weight: bold;
         }

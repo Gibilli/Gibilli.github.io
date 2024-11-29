@@ -87,7 +87,7 @@ main .cv .container {
   }
 }
 main .project-info {
-  background-color: #1A1A2E; /* Un colore neutro per il contrasto */
+  background-color: #1A1A2E;
   padding: 20px;
   margin: 20px auto;
   text-align: center;
@@ -101,7 +101,7 @@ main .project-info p {
   line-height: 1.6;
 }
 main .project-info a {
-  color: #FFD700; /* Un blu per link che si abbina bene */
+  color: #FFD700;
   text-decoration: none;
   font-weight: bold;
 }
